@@ -7,6 +7,20 @@ const Add = () => {
     y.innerHTML += `<li class="todo">${x}</li><hr>`;
 
 }
+let i=4;
+const AddStock = () => {
+    let x = document.getElementsByClassName("addstock")[0].value;
+    let y = document.getElementsByClassName("stocks")[0];
+    console.log(x);
+    console.log(y);
+    if(x!="")
+        {
+            y.innerHTML += `<div class="ticker tick${i}"></div>`;
+            StockAPI(x,`tick${i}`);
+            i++;
+        }
+
+}
 
 
 

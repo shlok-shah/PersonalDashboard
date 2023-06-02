@@ -30,6 +30,12 @@ body{
     grid-row-gap: 7px;
     min-height: 650px;
 }
+.options{
+    /* align-self: flex-start; */
+    padding-top: 20px;
+    width: 80%;
+    
+}
 @media screen and (max-width:1100px) {
     .container{
         display: block;
@@ -38,16 +44,18 @@ body{
 
     .container > div{
         margin: 10px;
-        min-height:250px;
+    }
+    .options {
+        display: none;
     }
     
 }
 .stocks {
-    width:90%;
+    width:100%;
     height:80%;
     background-color: rgba(0, 0, 0, 0.541);
     border-radius: 10px;
-    margin-left: 5%;
+    
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -116,12 +124,7 @@ body{
     
 }
 
-.options{
-    /* align-self: flex-start; */
-    padding-top: 20px;
-    width: 80%;
-    
-}
+
 .opt:hover{
     background-color: aquamarine;
     color: black;
@@ -254,12 +257,72 @@ body{
     display: flex;
     flex-direction: column; 
 }
-.box3 { grid-area: 2 / 7 / 7 / 9; }
+.box3 { 
+    grid-area: 2 / 7 / 7 / 9;
+    padding: 10px;
+}
 .box4 { 
     grid-area: 2 / 9 / 7 / 11;
     display: flex;
     flex-direction: column;
 
+}
+
+.weather {
+    margin: 20px ;
+    padding: 10px;
+    background-color: #1B2430;
+    border-radius: 10px;
+}
+
+.weather  > a{
+    text-decoration: none;
+    color: #A5D7E8;
+
+}
+
+#stockbutton {
+    width: 20%;
+    height: 30px;
+    background-color:#0B2447;
+    border-radius: 10px;
+    border: #A5D7E8 solid 2px;
+    color: #A5D7E8;
+}
+
+.addstock {
+    width: 70%;
+    height: 30px;
+    background-color:#0B2447;
+    border-radius: 10px;
+    border: #A5D7E8 solid 2px;
+    color: #A5D7E8;
+    padding: 5px;
+}
+
+#taskbutton {
+    width: 20%;
+    height: 30px;
+    background-color:#0B2447;
+    border-radius: 10px;
+    border: #000000 solid 2px;
+    color: #A5D7E8;
+}
+
+.addtask {
+    width: 70%;
+    height: 30px;
+    background-color:#0B2447;
+    border-radius: 10px;
+    border: #000000 solid 2px;
+    color: #A5D7E8;
+    padding: 5px;
+}
+
+
+.addstock {
+    margin-left: 20px;
+    margin: 5px;
 }
 .box5 { grid-area: 5 / 3 / 7 / 6; }
 .box6 { grid-area: 5 / 6 / 7 / 9; }
